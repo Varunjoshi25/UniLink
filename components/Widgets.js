@@ -17,9 +17,9 @@ function Widgets({ articles }) {
           {articles.slice(0, 10).map((article) => (
             <motion.article 
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.99 }}>
+            whileTap={{ scale: 0.99 }}
+            key={article.url}>
             <div
-              key={article.url}
               className="flex space-x-2 items-center cursor-pointer hover:bg-black/10 hover: dark:hover:bg-black/20 px-2.5 py-2"
             >
               <FiberManualRecordRoundedIcon className="!h-2 !w-2" />
