@@ -77,7 +77,7 @@ function Post({ post, modalPost }) {
       )}
 
       {post.photoUrl && !modalPost && (
-        <img
+        <Image
           src={post.photoUrl}
           alt=""
           className="w-full cursor-pointer"

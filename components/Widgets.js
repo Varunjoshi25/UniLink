@@ -24,7 +24,7 @@ function Widgets({ articles }) {
             >
               <FiberManualRecordRoundedIcon className="!h-2 !w-2" />
               <div>
-                <h5 className="max-w-xs font-medium text-sm pr-10"><a href={article.url} target="_blank">
+                <h5 className="max-w-xs font-medium text-sm pr-10"><a href={article.url} target="_blank" rel="noreferrer">
                   {article.title}
                 </a></h5>
                 <TimeAgo
@@ -42,6 +42,7 @@ function Widgets({ articles }) {
         <div className="relative w-full h-full">
           <Image
             src="https://rb.gy/zjzpiz"
+            alt=""
             layout="fill"
             objectFit="contain"
             priority
